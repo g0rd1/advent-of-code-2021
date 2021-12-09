@@ -30,7 +30,7 @@ fun getBasin(
     if (value == 9 || previousValue >= value) return listOf()
     return getAdjacentPoints(points, row, column).flatMap { (pointRow, pointColumn) ->
         getBasin(points, pointRow, pointColumn, value)
-    }.distinct() + Point(value, column, row)
+    }.distinct() + Point(value, row, column)
 }
 
 private fun getAdjacentPoints(points: List<List<Int>>, row: Int, column: Int): List<Pair<Int, Int>> {
