@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val path = "src\\main\\kotlin\\day1\\part1\\input.txt"
+    val path = "src\\main\\kotlin\\day01\\part1\\input.txt"
     val measurements = File(path).readLines().map { it.toInt() }
     val windowedMeasurements = measurements.windowed(3)
     val sumOfWindowedMeasurements = windowedMeasurements.map { it.sum() }

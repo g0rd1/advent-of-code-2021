@@ -6,7 +6,7 @@ import kotlin.math.ceil
 import kotlin.math.floor
 
 fun main() {
-    val path = "src\\main\\kotlin\\day7\\input.txt"
+    val path = "src\\main\\kotlin\\day07\\input.txt"
     val input = File(path).readText()
     val positions = input.split(",").map { it.trim().toInt() }
     val optimalPosition = getOptimalPosition(positions, positions.minOrNull()!!, positions.maxOrNull()!!)

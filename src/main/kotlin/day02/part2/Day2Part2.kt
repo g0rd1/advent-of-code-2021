@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val path = "src\\main\\kotlin\\day2\\input.txt"
+    val path = "src\\main\\kotlin\\day02\\input.txt"
     val commands = File(path).readLines()
     val position = commands.fold(Triple(0, 0, 0)) { (horizontalPosition, depth, aim), command ->
         val split = command.split(" ")

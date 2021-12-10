@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val path = "src\\main\\kotlin\\day6\\input.txt"
+    val path = "src\\main\\kotlin\\day06\\input.txt"
     val input = File(path).readText()
     val lanternfishTimerToCount = input
         .split(",")

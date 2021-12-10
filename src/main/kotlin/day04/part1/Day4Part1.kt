@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val path = "src\\main\\kotlin\\day4\\input.txt"
+    val path = "src\\main\\kotlin\\day04\\input.txt"
     val input = File(path).readLines()
     val winNumbers = input[0].split(",")
     val boardSize = 5

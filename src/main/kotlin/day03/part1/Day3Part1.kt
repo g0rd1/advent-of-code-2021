@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val path = "src\\main\\kotlin\\day3\\input.txt"
+    val path = "src\\main\\kotlin\\day03\\input.txt"
     val reports = File(path).readLines()
     val zeroCounts = (0 until reports[0].length).map { index ->
         reports.count { it[index] == '0' }

@@ -3,7 +3,7 @@ import day05.Point
 import java.io.File
 
 fun main() {
-    val path = "src\\main\\kotlin\\day5\\input.txt"
+    val path = "src\\main\\kotlin\\day05\\input.txt"
     val input = File(path).readLines()
     val lines = input.map { inputLine ->
         val points = inputLine.split(" -> ")

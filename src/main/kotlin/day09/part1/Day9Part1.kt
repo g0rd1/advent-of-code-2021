@@ -3,7 +3,7 @@ package day09.part1
 import java.io.File
 
 fun main() {
-    val path = "src\\main\\kotlin\\day9\\input.txt"
+    val path = "src\\main\\kotlin\\day09\\input.txt"
     val input = File(path).readLines()
     val points = input.map { inputLine ->
         inputLine.split("").filter { it.isNotBlank() }.map { it.toInt() }

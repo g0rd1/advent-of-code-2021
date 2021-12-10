@@ -3,7 +3,7 @@ package day08.part2
 import java.io.File
 
 fun main() {
-    val path = "src\\main\\kotlin\\day8\\input.txt"
+    val path = "src\\main\\kotlin\\day08\\input.txt"
     val input = File(path).readLines()
     val patternsToOutputValues: Map<List<String>, List<String>> = input.associate { inputValue ->
         Pair(
