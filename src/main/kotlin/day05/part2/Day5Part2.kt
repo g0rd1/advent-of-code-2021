@@ -1,5 +1,5 @@
-import day5.Line
-import day5.Point
+import day05.Line
+import day05.Point
 import java.io.File
 
 fun main() {

@@ -1,4 +1,4 @@
-package day8.part2
+package day08.part2
 
 class Display(private val patterns: List<String>) {
 

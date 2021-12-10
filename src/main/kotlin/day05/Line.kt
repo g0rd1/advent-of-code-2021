@@ -1,4 +1,4 @@
-package day5
+package day05
 
 data class Line(val startPoint: Point, val endPoint: Point) {
 
