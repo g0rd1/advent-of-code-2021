@@ -30,7 +30,7 @@ class Caves(CaveConnectionInfo: List<String>) {
                     if (cave.isStartCave()) return@filter false
                     if (cave.isEndCave()) return@filter true
                     if (!cave.isSmall()) return@filter true
-                    if (cave.isSmall() && !route.contains(cave)) return@filter true
+                    if (!route.contains(cave)) return@filter true
                     route.filter { it.isSmall() }.groupingBy { it }.eachCount().none { (_, count) ->
                         count >= smallCaveVisitTimes
                     }
